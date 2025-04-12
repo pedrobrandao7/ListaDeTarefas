@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e3e4e8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-tarefas {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-tarefas {
+    padding: 10px 15px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-tarefas:hover {
+    background: #45a049;
+    transform: scale(1.1) ;
+    transition: 0.4s;
+}
+
+ul.tarefas {
+    list-style: none ;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul.tarefas li {
+    display: flex; /* Align items horizontally */
+    align-items: flex-start; /* Align items vertically at the top */
+    flex-wrap: wrap; /* Allow the content to wrap to the next line */
+    padding: 5px 10px; /* Add padding for better spacing */
+    margin-bottom: 5px; /* Add space between tasks */
+    border: none; /* Add a border for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 100%; /* Ensure the box doesn't grow beyond its container */
+    overflow-wrap: break-word; /* Break long words to fit inside the box */
+    white-space: normal; /* Allow text to wrap to the next line */
+    font-weight: 700;
+}
+
+ul.tarefas li button {
+    margin-left: 10px; /* Add space between the task text and the button */
+    background-color: #ff4d4d; /* Bright red background */
+    color: white; /* White text for contrast */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Add padding for better size */
+    font-size: 14px; /* Adjust font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-size: 10px;
+}
+
+ul.tarefas li button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
